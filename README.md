@@ -14,9 +14,9 @@ Unofficial image for running Coder in offline / private / air-gapped networks.
 
 ## Docker run without pgsql
 ```
-docker run -itd -p 3000:3000 --name coder coder-offline:v0.3 --access-url=http://0.0.0.0:3000 --http-address=0.0.0.0:3000
+docker run -itd -p 3000:3000 --name coder coder-offline:v0.3 --access-url=http://ip:3000 --http-address=0.0.0.0:3000
 ```
 ## Docker run with pgsql
 ```
-docker run -itd -p 3000:3000 --name coder coder-offline:v0.3 --access-url=http://0.0.0.0:3000 --http-address=0.0.0.0:3000 --postgres-url postgres://postgres:username@localhost:5432/database?sslmode=disable
+docker run -itd -p 3000:3000 --name coder coder-offline:v0.3 --access-url=http://ip:3000 --http-address=0.0.0.0:3000 --postgres-url postgres://postgres:username@localhost:5432/database?sslmode=disable
 ```
