@@ -1,0 +1,7 @@
+# filesystem-mirror-example.tfrc
+provider_installation {
+  filesystem_mirror {
+    path = "/home/coder/.terraform.d/plugins"
+  }
+}
+
